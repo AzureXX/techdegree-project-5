@@ -1,0 +1,32 @@
+//Media Queries mixins
+@mixin bp($point) {
+  @if $point == tablet {
+    @media #{$bp-#{$point}} {
+      @content;
+    }
+  }else {
+  @error "There is no such breakpoint";
+  }
+}
+
+//Flexbox settings mixins
+@mixin flexbox($flex, $wrap, $justify) {
+  display: $flex;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+//Element BEM Selectors mixins
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+
+//Modifiers BEM Selectors mixins
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
