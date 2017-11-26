@@ -1,13 +1,20 @@
-.img--logo {
-  @extend %images;
-  margin-bottom: 1em;
-}
-.img--frame {
-  @extend %images;
-  width: 100%;
+.img {
 
-}
+    @include m(logo) {
+        @extend %margin-auto;
+        display: block;
+        padding: 40px 0;
+    }
 
-.img--avatar{
-  @extend %images;
+    @include m(frame) {
+        width: 100%;
+        padding: 15px;
+        border: solid 1px lightgrey;
+    }
+
+    @include m(avatar) {
+        @extend %margin-auto;
+        display: block;
+        padding: 25px 0;
+    }
 }

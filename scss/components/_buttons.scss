@@ -1,24 +1,15 @@
+.btn {
+    @include m(default) {
+        margin-top: 30px;
+    }
 
+    @each $theme, $color in $ui-colors {
+        &--#{$theme}.theme__colors {
+            background: $color;
+        }
+    }
+}
 
-.btn--default {
-  @extend %button;
-  background-color: $color-secondary;
-}
-.btn--success {
-  @extend %button;
-  background-color: lightgreen;
-}
-.btn--error {
-  @extend %button;
-  background-color: tomato;
-}
-.btn--warning {
-  @extend %button;
-  background-color: orange;
-}
-.btn--info {
-  @extend %button;
-  background-color: purple;
-}
-.theme__colors {
-}
+[class^="btn--"] {
+     @extend %btn;
+    }

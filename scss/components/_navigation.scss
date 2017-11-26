@@ -1,21 +1,27 @@
-.nav__item {
-  display: block;
-  list-style: none;
-  width: 100%;
-  text-align: center;
+.nav {
+    @extend %centered;
+    padding: 0 0 70px;
+    margin: 0;
+    @include mq(tablet) {
+        @include flex(flex, row, $just: space-around);
+        width: 60%;
+        margin: 65px 0 0 200px;
+    }
 
-  a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  color: black;
-  padding: 1em;
-    &:visited{
-      color:black;
+    @include e(item) {
+        border-radius: 5px;
+        padding: 12px 10px;
+
+        a {
+            @extend %text-dec-none;
+            color: black;
+        }
+
+        &:hover  {
+            background-color: $primary-color;
+            a {
+                color: white;
+            }
+        }
     }
-    &:hover {
-      background-color: $color-primary;
-      color: white;
-    }
-  }
 }

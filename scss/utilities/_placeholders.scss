@@ -1,26 +1,61 @@
-//Links placeholders
-%links {
-  text-decoration: none;
-}
-//Images placeholders
-%images {
-  margin: 0 auto;
-  display: block;
-}
-//Headlines placeholders
-%headlines {
-  font-weight: bolder;
-}
-//Nav items placeholders
-%nav-items {
-  font-weight: lighter;
+// ===============Screen Readers======================//
+
+%srt {
+    visibility: hidden;
 }
 
-//Buttons placeholders
-%button {
-  color: white;
-  padding: 0.5em;
-  margin: 0.5em auto;
-  width: 100%;
-  border-radius: 10px;
+
+// ===============Buttons======================//
+
+%btn {
+    width: 100%;
+    padding: 0.75em 0;
+    font-family: $font-primary;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    @include flex(flex, column) {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+// ===============Grid======================//
+
+%grid-styles {
+    padding: 0.95em 0 0.95em 15px;
+    font-family: $font-primary;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+    font-weight: 700;
+}
+
+// =============== HELPERS ======================//
+
+//Centered
+%centered {
+    text-align: center;
+}
+
+//Remove underline from links
+%text-dec-none {
+    text-decoration: none;
+}
+
+//Margin auto
+%margin-auto {
+    margin: 0 auto;
+}
+
+//Nav padding and margin
+%nav-padding-margin {
+    margin: 0.75em 0;
+    padding: 0.75em 0;
+}
+
+%card-padding {
+    padding: 0.9375em;
 }

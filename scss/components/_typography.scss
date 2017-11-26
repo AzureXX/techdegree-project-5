@@ -1,32 +1,55 @@
-.container{
 
+
+.container {
+    @extend %margin-auto;
+    font-family: $font-primary;
+    width: 85%;
 }
 
+.headline {
+    @include m(primary) {
+        color: $primary-color;
+        font-weight: 900;
+        width: 75%;
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-left: 15px;
 
-.link{
-  text-decoration: none;
-  color:$color-secondary;
+    }
+    @include m(secondary){
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+        color: grey;
+        @include mq(tablet) {
+            margin-top: 50px;
+        }
+    }
 }
 
-
-.blockquote{
-  display: block;
-  margin: 0.5em auto;
-  width: 90%;
-  border-left: 5px solid $color-primary;
-  padding-left: 10px;
-  font-style: italic;
-  font-size: 1.1em;
-  line-height: 2em;
+.card {
+    p {
+        @extend %margin-auto;
+        @extend %card-padding;
+        font-size: 18px;
+        color: grey;
+    }
 }
 
-
-.headline--primary{
-  color: $color-primary;
+.link {
+    color: $secondary-color;
+    font-weight: 900;
+    text-decoration: none;
 }
 
-
-.headline--secondary{
-  color: grey;
-  font-weight: lighter;
+.blockquote {
+    border-left: 6px solid $primary-color;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 15px;
+    margin: 0 15px 40px;
+    font-style: italic;
+    font-size: 20px;
+    color:  grey;
 }

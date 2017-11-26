@@ -1,18 +1,13 @@
-//Universal selector
 
 * {
-  box-sizing:border-box;
-  margin:0;
-  padding: 0;
+	box-sizing: border-box;
 }
 
-//ul elements
 ul {
-  display: block;
-  width:100%;
+    list-style-type: none;
 }
 
-//p elements
-p {
-
+p  {
+    line-height: 25px;
+    font-size: 14px;
 }
