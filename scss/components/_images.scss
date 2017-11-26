@@ -1,0 +1,13 @@
+.img--logo {
+  @extend %images;
+  margin-bottom: 1em;
+}
+.img--frame {
+  @extend %images;
+  width: 100%;
+
+}
+
+.img--avatar{
+  @extend %images;
+}

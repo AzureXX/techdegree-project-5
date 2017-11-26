@@ -1,19 +1,21 @@
 //Media Queries mixins
-@mixin bp($point) {
-  @if $point == tablet {
-    @media #{$bp-#{$point}} {
-      @content;
+@mixin bp($device) {
+    @if $device == tablet {
+      @media (min-width: $bp-tablet) {
+        @content;
+      }
+    } @else {
+      @error("There is no such breakpoint")
     }
-  }else {
-  @error "There is no such breakpoint";
-  }
 }
-
 //Flexbox settings mixins
-@mixin flexbox($flex, $wrap, $justify) {
+@mixin flexbox($flex: flex, $grow: 1, $direction: column, $wrap: wrap, $justify: center ) {
   display: $flex;
+  flex-direction: $direction;
   flex-wrap: $wrap;
+  flex-grow: $grow;
   justify-content: $justify;
+
 }
 
 //Element BEM Selectors mixins

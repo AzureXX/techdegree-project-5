@@ -3,9 +3,14 @@ $font--primary   : "Helvetica Neuo", Helvetica, Arial, sans-serif;
 $font--secondary : Garamond, serif;
 
 //Breakpoints variables
-$bp-tablet   : (min-width: 769px);
-$bp-desktop  : (min-width: 1025px);
+$bp-tablet   :  769px;
+
 
 //Colors variables
-$color-primary    :#fff;
-$color-secondary  :#000;
+$color-primary    :lightblue;
+$color-secondary  :blue;
+
+
+//Grid variables
+
+$col: 12;

@@ -4,7 +4,8 @@
 }
 //Images placeholders
 %images {
-  border: 1px solid white;
+  margin: 0 auto;
+  display: block;
 }
 //Headlines placeholders
 %headlines {
@@ -13,4 +14,13 @@
 //Nav items placeholders
 %nav-items {
   font-weight: lighter;
+}
+
+//Buttons placeholders
+%button {
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em auto;
+  width: 100%;
+  border-radius: 10px;
 }

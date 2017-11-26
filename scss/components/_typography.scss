@@ -1,0 +1,32 @@
+.container{
+
+}
+
+
+.link{
+  text-decoration: none;
+  color:$color-secondary;
+}
+
+
+.blockquote{
+  display: block;
+  margin: 0.5em auto;
+  width: 90%;
+  border-left: 5px solid $color-primary;
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+
+.headline--primary{
+  color: $color-primary;
+}
+
+
+.headline--secondary{
+  color: grey;
+  font-weight: lighter;
+}
