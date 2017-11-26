@@ -1,7 +1,7 @@
 
 
 .container {
-    @extend %margin-auto;
+    margin: 0 auto;
     font-family: $font-primary;
     width: 85%;
 }
@@ -30,8 +30,8 @@
 
 .card {
     p {
-        @extend %margin-auto;
-        @extend %card-padding;
+        margin: 0 auto;
+        padding: 0.9375em;
         font-size: 18px;
         color: grey;
     }
@@ -50,6 +50,7 @@
     padding-left: 15px;
     margin: 0 15px 40px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 36px;
     color:  grey;
 }

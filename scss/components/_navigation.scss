@@ -1,5 +1,5 @@
 .nav {
-    @extend %centered;
+    text-align: center;
     padding: 0 0 70px;
     margin: 0;
     @include mq(tablet) {
@@ -13,7 +13,7 @@
         padding: 12px 10px;
 
         a {
-            @extend %text-dec-none;
+            text-decoration: none;
             color: black;
         }
 
